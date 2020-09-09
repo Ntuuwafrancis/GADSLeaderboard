@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GADS Leaderboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tabLearning">Learning Leaders</string>
+    <string name="tabSkillIQ">Skill IQ Leaders</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="learners_name">Top learners name</string>
+    <string name="learners_details">Top learners details</string>
+    <string name="error_connection">Problem encountered loading the data, try to check your connection</string>
+    <string name="leaderboad">LEADERBOAD</string>
+    <string name="submit">Submit</string>
+    <string name="text_learning_leader_details"> learning hours, </string>
+    <string name="hours_badge_description">Hours Badge</string>>
+</resources>
