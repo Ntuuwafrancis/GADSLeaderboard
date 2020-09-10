@@ -16,4 +16,8 @@
     <string name="text_skill_iq_details"> skill IQ Score, </string>
     <string name="hours_badge_description">Hours Badge</string>>
     <string name="skill_iq_badge_description">Skill IQ Badge</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="project_link_hint">Project on GITHUB (link)</string>
 </resources>

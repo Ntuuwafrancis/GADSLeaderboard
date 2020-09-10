@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.frank.gadsleaderboard.fragments.LeadersFragmentAdapter;
@@ -25,11 +27,21 @@ public class MainActivity extends AppCompatActivity {
 
     private TabLayout mTabLayout;
     private ViewPager2 mViewPager2;
+    private Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        submitBtn = findViewById(R.id.submit_btn);
+        submitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SubmitProject.class);
+                startActivity(intent);
+            }
+        });
 
         mViewPager2 = findViewById(R.id.viewPager);
         mViewPager2.setAdapter(new LeadersFragmentAdapter(this));

@@ -25,7 +25,7 @@
             <ImageView
                 android:id="@+id/skill_iq_badge"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="90dp"
                 android:layout_weight="40"
                 android:contentDescription="@string/hours_badge_description"
                 android:padding="@dimen/low_padding" />
