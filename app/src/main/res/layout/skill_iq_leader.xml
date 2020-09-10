@@ -7,7 +7,7 @@
     >
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_learning"
+        android:id="@+id/cv_skill_iq"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/low_padding"
@@ -23,16 +23,17 @@
             android:weightSum="100">
 
             <ImageView
-                android:id="@+id/badge"
+                android:id="@+id/skill_iq_badge"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
-                android:layout_weight="20"
-                android:contentDescription="@string/hours_badge_description" />
+                android:layout_weight="40"
+                android:contentDescription="@string/hours_badge_description"
+                android:padding="@dimen/low_padding" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="80"
+                android:layout_weight="60"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:paddingEnd="@dimen/standard_view_padding"
@@ -40,7 +41,7 @@
 
 
                 <TextView
-                    android:id="@+id/tvName"
+                    android:id="@+id/tvName_skill_iq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/learners_name"
@@ -49,7 +50,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvDetails"
+                    android:id="@+id/tvDetails_skill_iq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/learners_details"

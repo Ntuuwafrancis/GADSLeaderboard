@@ -56,7 +56,7 @@ public class LearningRecyclerAdapter extends RecyclerView.Adapter<LearningRecycl
         }
 
         public void bind (LearningLeader leader) {
-            //ImageView view = new ImageView(mContext);
+
             tvName.setText(leader.getName());
             badge.setImageDrawable(leader.loadImage(badge, leader.badgeUrl));
             tvDetails.setText(new StringBuilder().append(leader.getHours()).append(" learning hours, ").append(leader.getCountry()).toString());

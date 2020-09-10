@@ -66,7 +66,7 @@ public class ApiUtil {
         final String COUNTRY = "country";
         final String BADGE_URL = "badgeUrl";
 
-        ArrayList<LearningLeader> TopLearningLeaders = new ArrayList<>();
+        ArrayList<LearningLeader> topLearningLeaders = new ArrayList<>();
         ArrayList<LearningLeader> learningLeaders = new ArrayList<>();
 
         try {
@@ -82,13 +82,11 @@ public class ApiUtil {
 
               );
 
-
               learningLeaders.add(learningLeader);
-              //hours[i] = jsonHoursLearner.getInt(HOURS);
 
             }
 
-            //Sorting Learners by Hours Consumed in Ascending order
+            //Sorting Learners by Hours Consumed in Descending order
             Collections.sort(learningLeaders, new Comparator<LearningLeader>() {
                 @Override
                 public int compare(LearningLeader o1, LearningLeader o2) {
@@ -98,13 +96,55 @@ public class ApiUtil {
             });
 
             for (int i = 0; i < 20; i++){
-                TopLearningLeaders.add(learningLeaders.get(i));
+                topLearningLeaders.add(learningLeaders.get(i));
             }
 
         } catch (Exception e) {
             Log.d("Error", e.getMessage());
         }
-        return TopLearningLeaders;
+        return topLearningLeaders;
+    }
+
+    public static ArrayList<SkillIqLearder> getSkillIqLeadersFromJson (String json) {
+        final String NAME = "name";
+        final String SCORE = "score";
+        final String COUNTRY = "country";
+        final String BADGE_URL = "badgeUrl";
+
+        ArrayList<SkillIqLearder> skillIqLearders = new ArrayList<>();
+        ArrayList<SkillIqLearder> topSkillIqLearders = new ArrayList<>();
+
+        try {
+            JSONArray arraySkillIq = new JSONArray(json);
+            int numberOfLeaders = arraySkillIq.length();
+            for (int j = 0; j < numberOfLeaders; j++){
+                JSONObject jsonSkillIqLeader = arraySkillIq.getJSONObject(j);
+                SkillIqLearder skillIqLearder = new SkillIqLearder(
+                        jsonSkillIqLeader.getString(NAME),
+                        jsonSkillIqLeader.getInt(SCORE),
+                        jsonSkillIqLeader.getString(COUNTRY),
+                        jsonSkillIqLeader.getString(BADGE_URL)
+                );
+
+                skillIqLearders.add(skillIqLearder);
+            }
+
+            //Sorting Skill IQ Learners by Score in Descending order
+            Collections.sort(skillIqLearders, new Comparator<SkillIqLearder>() {
+                @Override
+                public int compare(SkillIqLearder o1, SkillIqLearder o2) {
+                    return Integer.valueOf(o2.score).compareTo(o1.score);
+                }
+            });
+
+            for (int j = 0; j < 20; j++ ) {
+                topSkillIqLearders.add(skillIqLearders.get(j));
+            }
+
+        } catch (Exception e) {
+            Log.d("Error", e.getMessage());
+        }
+        return topSkillIqLearders;
     }
 
 }

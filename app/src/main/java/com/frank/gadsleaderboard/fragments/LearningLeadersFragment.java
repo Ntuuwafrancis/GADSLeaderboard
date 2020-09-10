@@ -75,8 +75,6 @@ public class LearningLeadersFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-
     }
 
     @Override
@@ -85,7 +83,7 @@ public class LearningLeadersFragment extends Fragment {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_learning_leaders, container, false);
 
-        mRecyclerView = (RecyclerView) mView.findViewById(R.id.recycler_learning);
+        mRecyclerView = mView.findViewById(R.id.recycler_learning);
 
         initializeDisplayContent();
 

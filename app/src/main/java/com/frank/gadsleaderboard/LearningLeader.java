@@ -1,7 +1,7 @@
 package com.frank.gadsleaderboard;
 
 import android.graphics.drawable.Drawable;
-import android.media.Image;
+
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
