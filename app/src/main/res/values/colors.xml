@@ -6,4 +6,6 @@
     <color name="colorDarkGrey">#656464</color>
     <color name="colorDivider">#ECECEC</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#1B9720</color>
+    <color name="colorRed">#CD1B0E</color>
 </resources>

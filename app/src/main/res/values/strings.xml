@@ -20,4 +20,12 @@
     <string name="last_name_hint">Last Name</string>
     <string name="email_address_hint">Email Address</string>
     <string name="project_link_hint">Project on GITHUB (link)</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="yes">Yes</string>
+    <string name="question_mark">\?</string>
+    <string name="content_description_cancel_image">Cancel Image</string>
+    <string name="content_description_success_image">"Success Image "</string>
+    <string name="content_description_error_image">Error Image</string>
 </resources>

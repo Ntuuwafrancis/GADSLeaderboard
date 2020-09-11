@@ -29,6 +29,10 @@
         <item name="android:textColorHint">@color/colorDarkGrey</item>
         <item name="android:textAllCaps">false</item>
     </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
 </resources>
 
 <!--<android.support.design.widget.TabLayout
