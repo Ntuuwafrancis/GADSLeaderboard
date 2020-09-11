@@ -28,4 +28,5 @@
     <string name="content_description_cancel_image">Cancel Image</string>
     <string name="content_description_success_image">"Success Image "</string>
     <string name="content_description_error_image">Error Image</string>
+    <string name="project_submission">Project Submission</string>
 </resources>

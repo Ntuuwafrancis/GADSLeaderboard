@@ -23,11 +23,16 @@ public class ApiUtil {
     public static final String BASE_API_URL = "https://gadsapi.herokuapp.com";
     public static final String LEARNING_LEADERS_PATH = "/api/hours";
     public static final String SKILL_IQ_LEADERS_PATH = "/api/skilliq";
+    public static final String API_KEY = "AIzaSyCy_AdjsbFQnqvg7mQgMhWXFVrxOOWjMsU";
+    public static final String KEY = "key";
 
     public static URL buildUrl(String path) {
 
         URL url = null;
-        Uri uri = Uri.parse(BASE_API_URL + path);
+        Uri uri = Uri.parse(BASE_API_URL + path).buildUpon()
+                .appendQueryParameter(KEY, API_KEY)
+                .build();
+
         try {
             url = new URL(uri.toString());
         } catch (Exception e) {
@@ -91,7 +96,7 @@ public class ApiUtil {
                 @Override
                 public int compare(LearningLeader o1, LearningLeader o2) {
 
-                    return Integer.valueOf(o2.hours).compareTo(o1.hours);
+                    return Integer.compare(o2.hours, o1.hours);
                 }
             });
 
@@ -133,7 +138,7 @@ public class ApiUtil {
             Collections.sort(skillIqLearders, new Comparator<SkillIqLearder>() {
                 @Override
                 public int compare(SkillIqLearder o1, SkillIqLearder o2) {
-                    return Integer.valueOf(o2.score).compareTo(o1.score);
+                    return Integer.compare(o2.score, o1.score);
                 }
             });
 

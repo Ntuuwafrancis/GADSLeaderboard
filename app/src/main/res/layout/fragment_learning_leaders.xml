@@ -14,6 +14,8 @@
         android:layout_gravity="center"
         android:layout_margin="@dimen/normal_padding"
         android:layout_marginEnd="@dimen/normal_padding"
+        android:layout_marginStart="@dimen/normal_padding"
+        android:padding="8dp"
         android:text="@string/error_connection"
         android:textSize="20sp"
         android:visibility="invisible"
@@ -33,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
