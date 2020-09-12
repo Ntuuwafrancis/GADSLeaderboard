@@ -3,7 +3,7 @@ GADS LEADERBOAD MOBILE ANDROID APP
 Designed by FRANCIS NTUUWA 
 GADS 2020
 
-#App Preview
+# APP PREVIEW
 ![SplashScreen](https://user-images.githubusercontent.com/51553342/92989762-49b98200-f4df-11ea-847f-8dedd2c28897.png)
 ![TopLearningLeadersScreen](https://user-images.githubusercontent.com/51553342/92989804-a0bf5700-f4df-11ea-8bde-eb41071dda54.png)
 ![TopSkillIQLeadersScreen](https://user-images.githubusercontent.com/51553342/92989878-2d6a1500-f4e0-11ea-8a6d-24f75b404a16.png)
